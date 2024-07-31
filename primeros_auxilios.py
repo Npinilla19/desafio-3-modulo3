@@ -27,9 +27,11 @@ def primeros_auxilios():
         while True:
             respuesta = input("¿Signos de Vida? (si/no): ").strip().lower()
             if respuesta == "si":
+                print("Reevaluar a la espera de la Ambulancia.")
                 
                 return True
             elif respuesta == "no":
+                print("Administrar Compresiones Torácicas hasta que llegue la ambulancia.")
                 
                 return False
             else:
@@ -47,18 +49,17 @@ def primeros_auxilios():
                 print("Respuesta no válida, por favor ingrese 'si' o 'no'.")
 
 
-
     if evaluar_respuesta_estimulacion():
         if evaluar_respiracion():
             while True:
-                if not llego_ambulancia():
-                    if not evaluar_signos_de_vida():
-                        print("Administrar Compresiones Torácicas hasta que llegue la ambulancia.")
-                    else:
-                        print("Reevaluar a la espera de la Ambulancia.")
+                if not evaluar_signos_de_vida():
+                    
+                    if llego_ambulancia():
+                        break
                 else:
-                    break
-    
+                   
+                    if llego_ambulancia():
+                        break
 
-if __name__ == "__main__":
-    primeros_auxilios()
+
+primeros_auxilios()
