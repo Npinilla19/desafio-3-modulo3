@@ -67,5 +67,5 @@ Elegir el programa a usar
 - [Vanessa Morales](https://github.com/vanemn)
 - [Benjamin Pardo](https://github.com/bpardo02)
 - [Andres Gallardo](https://github.com/AndresGallardo95)
-- [Camila Riquelme](https://github.com/camilariquelme)
+- [Camila riquelme](https://github.com/camilariquelme)
 - [Nicole Pinilla](https://github.com/Npinilla19)
